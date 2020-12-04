@@ -9,11 +9,12 @@ Then anonymously people go through and select people. You should have to enter y
 ## Importing packages
 import random
 
-## empty dictionary holding who has what person
+## empty dictionary holding who has what person to keep track. 
 dict = {}
 #people = input('Hello please add a list of names seperated by commas:')
+## I created a string of people so I don't have to input names every single time I run the code
 people = 'Jack,John,Karl,Martha,Ella,Mike,John'
-## Creates a string. Need to split on commas for it to work
+## Splits the names by commas and puts the names into a list.
 people_to_pick = list(people.split(','))
 ## Now it is a list of people that can be used. 
 
@@ -36,7 +37,10 @@ Remove that person's name from the people_tobe_picked list.
 Remove the person who picked someone from the list. 
 Say All Done 
 '''
+
+## Should I run it in a function and then return a value?
 def picking():
+    '''Creating a function that does the entire process'''
     while len(people_to_pick) > 0:
         name = input('Please Enter Your Name:')
         choices = people_tobe_picked
@@ -54,14 +58,13 @@ def picking():
                 i += 1
             ## If selection is yes they are sticking with it
             else:
+                ## Adding 300 so the while loop becomes deactivated.
                 i += 300
         ## I need to set something up that if i is greater than 3 you get assigned a 
-        if selection == '0':
+        ## This is the part where I am at a lost. I don't want it to randomly assign a new person after a person has already been selected.
+        #if selection == '0':
             
-        second_num = random.randint(0, len(choices))
-        forced
-        print(choices)
-
-
-    
-        
+        #second_num = random.randint(0, len(choices))
+        #forced
+        #print(choices)
+picking()
