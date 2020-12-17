@@ -7,3 +7,6 @@ bye= hello
 
 print('hello', hello)
 print('bye', bye)
+
+threshold = min(3, -1)
+print(threshold)
