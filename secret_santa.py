@@ -2,9 +2,6 @@
 Code to create a secret santa generator
 Karl Zodda
 
-Notes-
-I want there to be a feature where the person in charge types in names.
-Then anonymously people go through and select people. You should have to enter your name so that you cannot choose yourself. You should be able to pass on two people or if there are only two- you cannot pass. 
 '''
 ## Importing packages
 import random

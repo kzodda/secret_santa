@@ -1,6 +1,7 @@
 '''
 Karl Zodda
-The code to input user names'''
+The code to input user names
+'''
 
 
 def names():
